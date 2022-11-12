@@ -21,7 +21,9 @@
   </head>
   <body>
     <header id="header">
-      <nav class="navbar container d-flex justify-content-between">
+      <nav
+        class="navbar container d-flex justify-content-between align-items-start"
+      >
         <div class="navbar-left d-flex align-items-center">
           <a class="navbar-brand" href="#">
             <img src="img/1663118601059.jpeg" class="portre" />
@@ -32,22 +34,24 @@
           </div>
         </div>
         <div
-          class="navbar-right d-flex justify-content-lg-around justify-content-between"
+          class="navbar-right d-flex justify-content-lg-around justify-content-between flex-column align-items-end"
         >
-          <a href="" id="bar"><i class="fa-solid fa-bars d-lg-none"></i></a>
-          <div class="links d-none d-lg-block">
-            <a href="#header">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="">SKILLS</a>
-            <a href="">PORTFOLIO</a>
-            <a href="">CONTACT</a>
+          <button id="bar">
+            <i class="fa-solid fa-bars d-lg-none"></i>
+          </button>
+          <div class="links d-lg-block d-flex flex-column flex-lg-row show-bar">
+            <a href="#header" class="mb-2">HOME</a>
+            <a href="#about" class="mb-2">ABOUT</a>
+            <a href="#skills" class="mb-2">SKILLS</a>
+            <a href="#portfolio" class="mb-2">PORTFOLIO</a>
+            <a href="#contact" class="mb-2">CONTACT</a>
           </div>
         </div>
       </nav>
     </header>
     <main id="main-page">
       <div class="container">
-        <section id="about" class="text-center">
+        <section id="about" class="section text-center">
           <div class="row">
             <h3>About me</h3>
             <p>
@@ -58,10 +62,10 @@
             </p>
           </div>
         </section>
-        <section id="skils">
+        <section id="skills" class="section">
           <h3 class="text-center">My skills</h3>
           <div class="row align-items-center">
-            <h6 class="col-md-2 text-end me-3 mb-0">HTML5</h6>
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
             <div class="progress col-md-8">
               <div
                 class="progress-bar progress-bar-striped progress-bar-animated"
@@ -73,11 +77,11 @@
                 style="width: 100%"
               ></div>
             </div>
-            <span class="col-md-1 ms-2">100%</span>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
           </div>
           <br />
           <div class="row align-items-center">
-            <h6 class="col-md-2 text-end me-3 mb-0">HTML5</h6>
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
             <div class="progress col-md-8">
               <div
                 class="progress-bar progress-bar-striped progress-bar-animated"
@@ -89,11 +93,11 @@
                 style="width: 100%"
               ></div>
             </div>
-            <span class="col-md-1 ms-2">100%</span>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
           </div>
           <br />
           <div class="row align-items-center">
-            <h6 class="col-md-2 text-end me-3 mb-0">CSS3</h6>
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
             <div class="progress col-md-8">
               <div
                 class="progress-bar progress-bar-striped progress-bar-animated"
@@ -105,13 +109,11 @@
                 style="width: 100%"
               ></div>
             </div>
-            <span class="col-md-1 ms-2">100%</span>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
           </div>
           <br />
           <div class="row align-items-center">
-            <h6 class="col-md-2 text-start text-md-end me-3 mb-0">
-              JAVASCRIPT
-            </h6>
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
             <div class="progress col-md-8">
               <div
                 class="progress-bar progress-bar-striped progress-bar-animated"
@@ -123,7 +125,39 @@
                 style="width: 100%"
               ></div>
             </div>
-            <span class="col-md-1 ms-2">100%</span>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
+          </div>
+          <br />
+          <div class="row align-items-center">
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
+            <div class="progress col-md-8">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
+          </div>
+          <br />
+          <div class="row align-items-center">
+            <h6 class="col-md-2 text-md-end me-3 mb-2 mb-md-0">HTML5</h6>
+            <div class="progress col-md-8">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+            <span class="col-md-1 ms-2 d-none d-md-block">100%</span>
           </div>
           <br />
         </section>
@@ -135,5 +169,21 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const bar = document.querySelector("#bar");
+      const links = document.querySelector(".links");
+      // bar.addEventListener("click", () => {
+      //   if (links.style.display === "none") {
+      //     links.style.display = "block";
+      //   } else {
+      //     links.style.display = "none";
+      //   }
+      // });
+
+      bar.addEventListener("click", () => {
+        links.classList.toggle("show-bar");
+      });
+    </script>
   </body>
 </html>
