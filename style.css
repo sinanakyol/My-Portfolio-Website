@@ -17,12 +17,13 @@ header::before {
 
 img.portre {
   border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
 }
 
 img.portre:hover {
   scale: 1.1;
+  transition: 0.5s;
 }
 
 #myname {
@@ -34,6 +35,10 @@ img.portre:hover {
   font-family: cursive;
   color: #d6e4e5;
   text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 3px 5px;
 }
 
 #myname a:hover {
@@ -46,18 +51,24 @@ img.portre:hover {
   opacity: 0.5;
 } */
 
-.navbar-right a {
+.navbar-right a:not(#bar) {
   margin-left: 2rem;
   text-decoration: none;
   color: #fff;
   font-family: cursive;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 3px 5px;
 }
 
 .navbar-right a:hover {
   scale: 1.1;
+  transition: 0.5s;
+}
+
+#bar {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 /* .hi-text {
