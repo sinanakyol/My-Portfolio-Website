@@ -1,9 +1,8 @@
 #header {
-  background-image: url("img/web-design-internet-website-responsive-software-concept.jpg");
-  height: 100vh;
+  background-image: url("img/3.jpg");
+  height: 150vh;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 40px;
 }
 
 #header::before {
@@ -66,18 +65,22 @@ img.portre:hover {
 
 .navbar-right .links a:hover {
   transition: 0.3s;
+  scale: 1.1;
   opacity: 1;
 }
 
 #bar {
+  background-color: transparent;
+  border: none;
   color: #fff;
   opacity: 0.8;
   font-size: 2rem;
+  padding: 5px;
 }
 
 #bar:hover {
   transition: 0.3s;
-
+  scale: 1.1;
   opacity: 1;
 }
 
@@ -113,10 +116,24 @@ img.portre:hover {
 }
 
 .progress-bar {
-  background-color: #000;
+  background-color: rgb(48, 203, 203);
   padding: 0;
 }
 
-section {
+.section {
   margin-bottom: 40px;
+}
+
+#main-page {
+  background-image: url("img/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255, 0.9);
+  padding-top: 40px;
+}
+
+@media (max-width: 992px) {
+  .show-bar a {
+    display: none;
+  }
 }
