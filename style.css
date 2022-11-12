@@ -27,12 +27,12 @@ img.portre:hover {
   transition: 0.5s;
 }
 
-#myname {
+/* #myname {
   display: flex;
   flex-direction: column;
-}
+} */
 
-#myname a {
+/* #myname a {
   font-family: cursive;
   color: #d6e4e5;
   text-decoration: none;
@@ -40,12 +40,12 @@ img.portre:hover {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 3px 5px;
-}
+} */
 
-#myname a:hover {
+/* #myname a:hover {
   scale: 1.1;
   transition: 0.5s;
-}
+} */
 
 .navbar-right .links a {
   margin-left: 2rem;
@@ -59,7 +59,7 @@ img.portre:hover {
 }
 
 .navbar-right .links a:hover {
-  transition: 0.3s;
+  transition: 0.5s;
   scale: 1.1;
   opacity: 1;
 }
@@ -97,6 +97,10 @@ img.portre:hover {
   letter-spacing: 15px;
 }
 
+section#about {
+  padding: 200px;
+}
+
 #main-page {
   background-image: url("img/4.jpg");
   background-size: cover;
@@ -110,4 +114,16 @@ img.portre:hover {
   .show-bar a {
     display: none;
   }
+}
+
+#say-hi {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: center;
+  height: 60vh;
+  color: #fff;
+  font-size: 3rem;
+  padding: 5rem;
 }
