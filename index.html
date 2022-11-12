@@ -10,26 +10,42 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar container>
-        <div class="navbar-left d-flex">
+      <nav
+        class="navbar container d-flex flex-column justify-content-center flex-md-row justify-content-lg-between"
+      >
+        <div
+          class="navbar-left d-flex justify-content-center align-items-center"
+        >
           <a class="navbar-brand" href="#">
             <img src="img/1663118601059.jpeg" class="portre" />
           </a>
           <div id="myname">
-            <a href="">SİNAN AKYOL</a>
+            <a href="" class="mb-1">SİNAN AKYOL</a>
             <a href="">Frontend Developer</a>
           </div>
         </div>
-        <div class="navbar-right d-flex justify-content-around">
-          <a href="">HOME</a>
-          <a href="">ABOUT</a>
-          <a href="">SKILLS</a>
-          <a href="">PORTFOLIO</a>
-          <a href="">CONTACT</a>
+        <div
+          class="navbar-right d-flex justify-content-lg-around justify-content-center d-lg-none"
+        >
+          <a href="" id="bar"><i class="fa-solid fa-bars"></i></a>
+          <div>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SKILLS</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">CONTACT</a>
+          </div>
         </div>
       </nav>
     </header>
