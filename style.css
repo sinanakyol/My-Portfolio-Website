@@ -1,6 +1,6 @@
 #header {
   background-image: url("img/3.jpg");
-  height: 150vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -47,11 +47,6 @@ img.portre:hover {
   transition: 0.5s;
 }
 
-/* .navbar {
-  background-color: black;
-  opacity: 0.5;
-} */
-
 .navbar-right .links a {
   margin-left: 2rem;
   text-decoration: none;
@@ -84,33 +79,6 @@ img.portre:hover {
   opacity: 1;
 }
 
-/* .hi-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hi-text p {
-  width: 200px;
-  height: 100px;
-  background-color: #000;
-  opacity: 0.2;
-  border-radius: 10px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-family: cursive;
-} */
-
-/* .row {
-  margin-bottom: 40px;
-} */
-
 .row > * {
   padding: 0;
 }
@@ -121,15 +89,21 @@ img.portre:hover {
 }
 
 .section {
-  margin-bottom: 40px;
+  margin: 200px 0;
+}
+.section h3 {
+  font-family: "Merienda", cursive;
+
+  letter-spacing: 15px;
 }
 
 #main-page {
   background-image: url("img/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: local;
   color: rgb(255, 255, 255, 0.9);
-  padding-top: 40px;
+  padding: 40px;
 }
 
 @media (max-width: 992px) {
