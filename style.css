@@ -26,6 +26,7 @@ img.portre {
   height: 4.5rem;
   width: 4.5rem;
   opacity: 0.9;
+  border: 2px solid #fff;
 }
 
 img.portre:hover {
