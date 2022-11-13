@@ -1,8 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #header {
   background-image: url("img/3.jpg");
   height: 100vh;
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #header::before {
@@ -59,9 +65,10 @@ img.portre:hover {
 }
 
 .navbar-right .links a:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   scale: 1.1;
   opacity: 1;
+  text-shadow: 2px 2px aqua;
 }
 
 #bar {
@@ -88,17 +95,13 @@ img.portre:hover {
   padding: 0;
 }
 
-.section {
+#main-page .section {
   margin: 200px 0;
 }
-.section h3 {
+#main-page .section h3 {
   font-family: "Merienda", cursive;
-
   letter-spacing: 15px;
-}
-
-section#about {
-  padding: 200px;
+  text-shadow: 5px 5px 10px aqua;
 }
 
 #main-page {
@@ -119,11 +122,34 @@ section#about {
 #say-hi {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  text-align: center;
-  height: 60vh;
-  color: #fff;
+  color: rgb(182, 182, 182);
   font-size: 3rem;
-  padding: 5rem;
+  text-shadow: 2px 2px #ff0000;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+#code-img {
+  object-fit: fill;
+  width: 100%;
+}
+
+section#coding {
+  background-image: url("img/6.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgb(21, 21, 21);
+}
+
+footer .nav .nav-item .nav-link:hover {
+  text-decoration: underline;
 }
