@@ -155,9 +155,9 @@ section#code {
 }
 
 section#coding {
-  background-image: url("img/world.jpg");
+  background-image: url("img/worlddd.jpg");
   /* Set a specific height */
-  height: 400px;
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
