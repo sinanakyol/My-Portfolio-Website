@@ -27,11 +27,14 @@ img.portre {
   width: 4.5rem;
   opacity: 0.9;
   border: 2px solid #fff;
+  margin-top: 0.5rem;
+  transition: transform 1s, scale 1s;
 }
 
 img.portre:hover {
-  scale: 1.1;
-  transition: 0.5s;
+  scale: 1.2;
+  transition: 1s;
+  transform: rotate(360deg);
 }
 
 /* #myname {
@@ -60,16 +63,20 @@ img.portre:hover {
   color: #fff;
   font-family: cursive;
   border: 1px solid #fff;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 3px 5px;
   opacity: 0.6;
+  transition: text-shadow 0.5s, border 0.5s, opacity 0.5s;
 }
 
 .navbar-right .links a:hover {
-  transition: 0.3s;
-  scale: 1.1;
   opacity: 1;
   text-shadow: 2px 2px aqua;
+  border: none;
+}
+
+.navbar-right .links a:first-child {
+  border: 3px solid #fff;
 }
 
 #bar {
@@ -138,6 +145,15 @@ img.portre:hover {
   width: 100%;
 }
 
+section#code {
+  background-image: url("img/code.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section#coding {
   background-image: url("img/6.jpg");
   /* Set a specific height */
@@ -153,6 +169,31 @@ footer {
   background-color: rgb(21, 21, 21);
 }
 
-footer .nav .nav-item .nav-link:hover {
+footer .nav-item .nav-link:hover {
+  color: #fff;
+  scale: 1.1;
+  transition: 0.3s;
   text-decoration: underline;
+}
+
+.gif {
+  margin-left: 0%;
+  border-radius: 50% 20% / 10% 40%;
+  height: 250px;
+}
+
+#portfolio div:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact i {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
 }
