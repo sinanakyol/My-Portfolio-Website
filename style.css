@@ -124,7 +124,6 @@ img.portre:hover {
 section#code {
   background-image: url("./img/code.jpg");
   min-height: 500px;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,7 +184,6 @@ section#code {
     padding: 0 2rem;
   }
   #header,
-  section#pc,
   section#code {
     background-attachment: fixed;
   }
