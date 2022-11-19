@@ -95,7 +95,7 @@ img.portre:hover {
 }
 
 #main-page {
-  background-image: url("img/4.jpg");
+  background-image: url("./img/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: local;
@@ -126,7 +126,7 @@ img.portre:hover {
 }
 
 section#code {
-  background-image: url("img/code.jpg");
+  background-image: url("./img/code.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -135,7 +135,7 @@ section#code {
 }
 
 section#coding {
-  background-image: url("img/worlddd.jpg");
+  background-image: url("./img/worlddd.jpg");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
