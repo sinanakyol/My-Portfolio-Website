@@ -165,6 +165,7 @@ section#pc {
   height: 150px;
   width: 250px;
 }
+
 @media (max-width: 576px) {
   #portfolio div {
     display: flex;
