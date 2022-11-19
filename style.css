@@ -204,12 +204,15 @@ footer .nav-item .nav-link:hover {
     height: 200px;
     width: 300px;
   }
+  #soft-skills .soft {
+    padding: 0 2rem;
+  }
 }
 
 @media (min-width: 992px) {
   .gif {
-    height: 250px;
-    width: 450px;
+    height: 300px;
+    width: 500px;
   }
 }
 
@@ -222,4 +225,17 @@ footer .nav-item .nav-link:hover {
 #contact a {
   color: #fff;
   text-decoration: none;
+}
+
+#soft-skills span {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+#soft-skills span:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
 }
