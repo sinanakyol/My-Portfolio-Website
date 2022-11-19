@@ -9,7 +9,6 @@ html {
 #header {
   background-image: url("./img/3.jpg");
   height: 150vh;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,15 +101,9 @@ img.portre:hover {
   background-image: url("./img/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-position: center;
   color: rgb(255, 255, 255, 0.9);
   padding: 40px;
-}
-
-@media screen and (max-width: 992px) {
-  .show-bar a {
-    display: none;
-  }
 }
 
 #content {
@@ -132,18 +125,18 @@ img.portre:hover {
 section#code {
   background-image: url("./img/code.jpg");
   min-height: 500px;
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section#coding {
-  background-image: url("./img/worlddd.jpg");
+section#pc {
+  background-image: url("./img/last.jpg");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +165,7 @@ section#coding {
   height: 150px;
   width: 250px;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   #portfolio div {
     display: flex;
     flex-direction: column;
@@ -181,7 +174,8 @@ section#coding {
   }
 }
 
-@media screen and (min-width: 576px) {
+/* mobil görüntüyü bozmamak için attachment:fixed bu şekilde yazdık. */
+@media (min-width: 576px) {
   #portfolio div:nth-child(odd) {
     display: flex;
     justify-content: flex-end;
@@ -193,15 +187,26 @@ section#coding {
   #soft-skills .soft {
     padding: 0 2rem;
   }
+  #header,
+  section#pc,
+  section#code {
+    background-attachment: fixed;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .gif {
     height: 300px;
     width: 500px;
   }
   .navbar-right .links a {
     padding: 5px 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .show-bar a {
+    display: none;
   }
 }
 
