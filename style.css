@@ -3,7 +3,7 @@ html {
 }
 
 #header {
-  background-image: url("img/3.jpg");
+  background-image: url("./img/3.jpg");
   height: 150vh;
   background-attachment: fixed;
   background-position: center;
