@@ -1,3 +1,7 @@
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Retina-specific stuff here */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -107,7 +111,7 @@ img.portre:hover {
   padding: 40px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .show-bar a {
     display: none;
   }
@@ -172,7 +176,7 @@ section#coding {
   height: 150px;
   width: 250px;
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   #portfolio div {
     display: flex;
     flex-direction: column;
@@ -181,7 +185,7 @@ section#coding {
   }
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   #portfolio div:nth-child(odd) {
     display: flex;
     justify-content: flex-end;
@@ -195,7 +199,7 @@ section#coding {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .gif {
     height: 300px;
     width: 500px;
