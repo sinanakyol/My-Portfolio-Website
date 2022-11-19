@@ -219,7 +219,7 @@ section#code {
 }
 
 footer {
-  background-color: rgb(21, 21, 21);
+  background-image: linear-gradient(to bottom, rgb(11, 11, 11), rgb(0, 0, 0));
 }
 
 footer .nav-item .nav-link:hover {
