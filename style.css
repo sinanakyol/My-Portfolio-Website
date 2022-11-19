@@ -98,9 +98,8 @@ img.portre:hover {
 }
 
 #main-page {
-  background-image: url("./img/4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("./img/peakpx.jpg");
+  background-size: contain;
   background-position: center;
   color: rgb(255, 255, 255, 0.9);
   padding: 40px;
@@ -131,16 +130,13 @@ section#code {
   background-size: cover;
 }
 
-section#pc {
+/* section#pc {
   background-image: url("./img/last.jpg");
-  /* Set a specific height */
   height: 500px;
-  /* Create the parallax scrolling effect */
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 #soft-skills span {
   border: 1px solid white;
