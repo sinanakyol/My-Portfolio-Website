@@ -216,6 +216,10 @@ section#code {
   text-decoration: none;
 }
 
+#contact a:first-child:hover {
+  scale: 1.1;
+}
+
 footer {
   background-image: linear-gradient(to bottom, rgb(11, 11, 11), rgb(0, 0, 0));
 }
