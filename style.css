@@ -129,9 +129,9 @@ section#code {
   background-size: cover;
 }
 
-/* section#pc {
-  background-image: url("./img/last.jpg");
-  height: 500px;
+/* section#son {
+  background-image: url("./img/son.jpg");
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,9 +214,10 @@ section#code {
 #contact a {
   color: #fff;
   text-decoration: none;
+  transition: scale 0.3s;
 }
 
-#contact a:first-child:hover {
+#contact a:hover {
   scale: 1.1;
 }
 
