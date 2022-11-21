@@ -72,7 +72,7 @@ img.portre:hover {
 .navbar-right .links a:hover {
   opacity: 1;
   text-shadow: 2px 2px aqua;
-  border: none;
+  border: transparent;
 }
 
 .navbar-right .links a:first-child {
