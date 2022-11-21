@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
   width: 12px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -145,14 +146,6 @@ section#code {
   background-size: cover;
 }
 
-/* section#son {
-  background-image: url("./img/son.jpg");
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 #soft-skills span {
   border: 1px solid white;
   border-radius: 25px;
@@ -166,7 +159,11 @@ section#code {
   cursor: pointer;
 }
 
-#portfolio div {
+#portfolio h4 {
+  font-family: "Rubik Marker Hatch", cursive;
+}
+
+#portfolio > div {
   margin-bottom: 3rem;
 }
 
@@ -177,24 +174,23 @@ section#code {
   width: 250px;
 }
 
-@media (max-width: 576px) {
-  #portfolio div {
-    display: flex;
-    flex-direction: column;
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  #portfolio {
     justify-content: center;
     align-items: center;
   }
 }
 
 /* mobil görüntüyü bozmamak için attachment:fixed bu şekilde yazdık. */
-@media (min-width: 576px) {
-  #portfolio div:nth-child(odd) {
+@media screen and (min-width: 576px) {
+  #portfolio > div:nth-child(odd) {
     display: flex;
-    justify-content: flex-end;
-  }
-  .gif {
-    height: 200px;
-    width: 300px;
+    align-self: flex-end;
   }
   #soft-skills .soft {
     padding: 0 2rem;
@@ -205,17 +201,27 @@ section#code {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .gif {
-    height: 300px;
-    width: 500px;
+    height: 180px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gif {
+    height: 250px;
+    width: 400px;
   }
   .navbar-right .links a {
     padding: 5px 8px;
   }
+  #portfolio h4 {
+    font-size: 2rem;
+  }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .show-bar a {
     display: none;
   }
