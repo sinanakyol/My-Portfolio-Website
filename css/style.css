@@ -1,0 +1,254 @@
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(127, 1, 1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(24, 214, 214);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  background-image: url("../img/3.jpg");
+  height: 150vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+img.portre {
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  opacity: 0.9;
+  border: 2px solid #fff;
+  margin-top: 0.5rem;
+  transition: transform 1s, scale 1s;
+}
+
+img.portre:hover {
+  scale: 1.2;
+  transform: rotate(360deg);
+}
+
+.navbar-right .links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Font Awesome 6 Free";
+  border: 1px solid #fff;
+  border-radius: 7px;
+  padding: 3px 5px;
+  opacity: 0.6;
+  transition: text-shadow 0.5s, opacity 0.5s, border-color 0.5s;
+}
+
+.navbar-right .links a:hover {
+  opacity: 1;
+  text-shadow: 2px 2px aqua;
+  border-color: transparent;
+}
+
+.navbar-right .links a:first-child {
+  border: 3px solid #fff;
+}
+
+#bar {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+#bar:hover {
+  transition: 0.3s;
+  scale: 1.1;
+  opacity: 1;
+}
+
+.row > * {
+  padding: 0;
+}
+
+.progress-bar {
+  background-color: rgb(48, 203, 203);
+  padding: 0;
+}
+
+#main-page .section {
+  margin: 200px 0;
+}
+#main-page .section h3 {
+  font-family: "Merienda", cursive;
+  letter-spacing: 15px;
+  text-shadow: 5px 5px 10px aqua;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#main-page {
+  background-image: url("../img/peakpx.jpg");
+  background-size: contain;
+  background-position: center;
+  color: rgb(255, 255, 255, 0.9);
+  padding: 40px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  color: rgb(182, 182, 182);
+  font-size: 3rem;
+  text-shadow: 2px 2px #ff0000;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+#code-img {
+  object-fit: fill;
+  width: 100%;
+}
+
+section#code {
+  background-image: url("../img/code.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#soft-skills span {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#soft-skills span:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#portfolio h4 {
+  font-family: "Rubik Marker Hatch", cursive;
+}
+
+#portfolio > div {
+  margin-bottom: 3rem;
+}
+
+.gif {
+  margin-left: 0%;
+  border-radius: 50% 20% / 10% 40%;
+  height: 150px;
+  width: 250px;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  #portfolio {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* mobil görüntüyü bozmamak için attachment:fixed bu şekilde yazdık. */
+@media screen and (min-width: 576px) {
+  #portfolio > div:nth-child(odd) {
+    display: flex;
+    align-self: flex-end;
+  }
+  #soft-skills .soft {
+    padding: 0 2rem;
+  }
+  #header,
+  section#code {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gif {
+    height: 180px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gif {
+    height: 270px;
+    width: 450px;
+  }
+  .navbar-right .links a {
+    padding: 5px 8px;
+  }
+  #portfolio h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .show-bar a {
+    display: none;
+  }
+}
+
+#contact i {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: scale 0.3s;
+}
+
+#contact a:hover {
+  scale: 1.1;
+}
+
+footer {
+  background-image: linear-gradient(to bottom, rgb(23, 22, 22), rgb(0, 0, 0));
+}
+
+footer .nav-item .nav-link:hover {
+  scale: 1.2;
+  transition: 0.3s;
+}
