@@ -228,20 +228,24 @@ section#code {
   }
 }
 
-#contact i {
+#contact .icon {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 2rem;
+  transition: color 0.5s;
 }
 
-#contact a {
+#contact .icon:hover {
+  color: rgb(127, 1, 1);
+}
+
+#contact .contact-text {
   color: #fff;
   text-decoration: none;
-  transition: scale 0.3s;
 }
 
-#contact a:hover {
-  scale: 1.1;
+#contact .contact-text:hover {
+  text-decoration: underline;
 }
 
 footer {
