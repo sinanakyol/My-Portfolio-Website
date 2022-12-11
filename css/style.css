@@ -242,17 +242,22 @@ section#code {
 #contact .contact-text {
   color: #fff;
   text-decoration: none;
+  transition: color 0.5s;
 }
 
 #contact .contact-text:hover {
   text-decoration: underline;
+  color: rgb(127, 1, 1);
 }
 
 footer {
   background-image: linear-gradient(to bottom, rgb(23, 22, 22), rgb(0, 0, 0));
 }
 
+footer .nav-item .nav-link {
+  transition: scale 0.5s;
+}
+
 footer .nav-item .nav-link:hover {
   scale: 1.2;
-  transition: 0.3s;
 }
