@@ -48,14 +48,14 @@ img.portre {
   width: 4.5rem;
   opacity: 0.9;
   border: 2px solid #fff;
-  margin-top: 0.5rem;
-  transition: transform 1s, scale 1s;
+  margin-top: 1rem;
+  /* transition: transform 1s, scale 1s; */
 }
 
-img.portre:hover {
+/* img.portre:hover {
   scale: 1.2;
   transform: rotate(360deg);
-}
+} */
 
 .navbar-right .links a {
   margin-left: 2rem;
@@ -151,13 +151,13 @@ section#code {
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.5s, opacity 0.3s;
 }
 
 #soft-skills span:hover {
   transform: translateY(-7px);
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #portfolio h4 {
