@@ -1,0 +1,89 @@
+/* Portre */
+
+@keyframes myAnimation {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+  }
+}
+
+.portre {
+  animation: myAnimation 1s linear 0s infinite alternate none;
+}
+
+/* Daktilo */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.developer {
+  /* font: bold 111% Consolas, Monaco, monospace; */
+  border-right: 0.1em solid;
+  width: 250em;
+  width: 28ch; /* Ne kadar yazı yazacaksanız karakter sayacında sayıp buraya karakter sayısı kadar yazın. */
+  margin: 0.5em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end) infinite,
+    blink-caret 0.5s step-end infinite alternate;
+}
+
+/* Links */
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+#contact .icon {
+  animation: bounce 500ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+/* Github */
+#github {
+  animation: wiggle 2s linear infinite;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 0;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
