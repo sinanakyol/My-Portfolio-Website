@@ -151,7 +151,7 @@ section#code {
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  transition: transform 0.5s, opacity 0.3s;
+  transition: ease-out 0.3s;
 }
 
 #soft-skills span:hover {
