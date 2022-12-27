@@ -32,52 +32,63 @@
     <link rel="stylesheet" media="screen" href="css/style.css" />
     <link rel="stylesheet" media="screen" href="css/utils.css" />
     <link rel="stylesheet" media="screen" href="css/animation.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <header id="header">
-      <nav
-        class="navbar container d-flex justify-content-between align-items-start align-items-lg-center"
-      >
-        <div class="navbar-left d-flex align-items-center">
+      <nav role="navigation" class="navbar">
+        <div class="navbar-left">
           <a class="navbar-brand" href="#">
-            <img src="img/gg.jpeg" class="portre ms-3" />
+            <img src="img/gg.jpeg" class="portre m-5" />
           </a>
         </div>
-        <div
+        <!-- <div
           class="navbar-right d-flex justify-content-lg-around justify-content-between flex-column align-items-end"
         >
-          <button id="bar" class="me-3">
+          <button id="bar">
             <i class="fa-solid fa-bars d-lg-none"></i>
           </button>
           <div class="links d-lg-block d-flex flex-column flex-lg-row show-bar">
-            <a href="#header" class="mb-2">HOME</a>
+            <a href="#header" class="mb-2 fs-6">HOME</a>
             <a href="#about" class="mb-2">ABOUT</a>
             <a href="#hard-skills" class="mb-2">SKILLS</a>
             <a href="#portfolio" class="mb-2">PROJECTS</a>
             <a href="#contact" class="mb-2">CONTACT</a>
           </div>
+        </div> -->
+
+        <!-- <div id="menu-container"> -->
+        <div id="menu-container">
+          <div id="menuToggle" class="sidenav">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#header"><li>HOME</li></a>
+              <a href="#about"><li>ABOUT</li></a>
+              <a href="#hard-skills"><li>SKILLS</li></a>
+              <a href="#portfolio"><li>PROJECTS</li></a>
+              <a href="#contact"><li>CONTACT</li></a>
+            </ul>
+          </div>
         </div>
+        <!-- </div> -->
       </nav>
       <div id="content">
-        <span style="font-size: 2rem"> Hi, I'm</span>
-        <span style="font-size: 2.5rem; letter-spacing: 5px"
-          ><b> SİNAN </b></span
-        >
-        <span style="font-size: 2.5rem; letter-spacing: 5px"
-          ><b> AKYOL.</b></span
-        >
-        <span style="font-size: 2rem; letter-spacing: 10px" class="developer"
-          >Frontend Developer
-        </span>
+        <span class="fs-1"> Hi, I'm</span>
+        <span class="fs-1"><b> SİNAN </b></span>
+        <span class="fs-1"><b> AKYOL.</b></span>
+        <span class="developer">Frontend Developer </span>
         <!-- <span style="font-size: 1.5rem; letter-spacing: 15px" class="info">
           Developer
         </span> -->
       </div>
     </header>
     <main id="main-page">
-      <div class="container">
-        <section id="code"></section>
-
+      <div>
         <section id="about" class="section text-center">
           <div class="row px-lg-5">
             <h3>ABOUT ME</h3>
@@ -102,6 +113,8 @@
             </p>
           </div>
         </section>
+
+        <section id="code" class="d-none"></section>
 
         <section id="hard-skills" class="section">
           <h3>TECHNICAL SKILLS</h3>
@@ -392,52 +405,27 @@
           </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section mb-5">
           <div class="row">
             <h3>CONTACT</h3>
-            <div class="d-flex align-items-center py-3">
-              <a
-                class="icon col-3 col-sm-2 col-lg-1 ms-sm-5"
-                href="mailto:snn.akyl@hotmail.com"
+            <div class="d-flex justify-content-around align-items-center">
+              <a class="icon" href="mailto:snn.akyl@hotmail.com"
                 ><i class="fa-solid fa-envelope"></i
               ></a>
-              <a class="contact-text" href="mailto:snn.akyl@hotmail.com"
-                ><span>snn.akyl@hotmail.com</span></a
-              >
-            </div>
-            <div class="d-flex align-items-center py-3">
-              <a
-                class="icon col-3 col-sm-2 col-lg-1 ms-sm-5"
-                href="https://www.linkedin.com/in/sinan-akyol/"
-                ><i class="fa-brands fa-linkedin"></i
+
+              <a class="icon" href="https://www.linkedin.com/in/sinan-akyol/"
+                ><i class="fa-brands fa-linkedin-in"></i
               ></a>
-              <a
-                class="contact-text"
-                href="https://www.linkedin.com/in/sinan-akyol/"
-                ><span>linkedin.com/in/sinan-akyol</span></a
-              >
-            </div>
-            <div class="d-flex align-items-center py-3">
-              <a
-                class="icon col-3 col-sm-2 col-lg-1 ms-sm-5"
-                href="https://github.com/sinanakyol"
+
+              <a class="icon" href="https://github.com/sinanakyol"
                 ><i class="fa-brands fa-github"></i
               ></a>
-              <a class="contact-text" href="https://github.com/sinanakyol"
-                >github.com/sinanakyol</a
-              >
-            </div>
-            <div class="d-flex align-items-center py-3">
+
               <a
-                class="icon col-3 col-sm-2 col-lg-1 ms-sm-5"
+                class="icon"
                 href="https://www.google.com.tr/maps/place/Denizli+Merkez,+Denizli/@37.8905734,28.8152062,10z/data=!3m1!4b1!4m5!3m4!1s0x14c7139e13246151:0xccf557bc03a2758d!8m2!3d37.8453826!4d29.0925356"
                 ><i class="fa-solid fa-location-dot"></i
               ></a>
-              <a
-                class="contact-text"
-                href="https://www.google.com.tr/maps/place/Denizli+Merkez,+Denizli/@37.8905734,28.8152062,10z/data=!3m1!4b1!4m5!3m4!1s0x14c7139e13246151:0xccf557bc03a2758d!8m2!3d37.8453826!4d29.0925356"
-                ><span>Denizli / Türkiye</span></a
-              >
             </div>
           </div>
         </section>
