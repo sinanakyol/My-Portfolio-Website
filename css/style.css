@@ -26,6 +26,7 @@
   font-size: 50px;
   color: aqua;
   background-color: transparent;
+  z-index: 10;
 }
 
 html {
