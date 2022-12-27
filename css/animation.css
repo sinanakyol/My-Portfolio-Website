@@ -54,9 +54,9 @@
   }
 }
 
-/* Links */
+/* up-btn */
 
-/* @keyframes bounce {
+@keyframes bounce {
   from {
     transform: translateY(0px);
   }
@@ -65,9 +65,9 @@
   }
 }
 
-#contact .icon {
-  animation: bounce 500ms alternate cubic-bezier(0.2, 0.65, 0.6, 1);
-} 
+#up-btn {
+  animation: bounce 500ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
 
 /* Github */
 #github {
