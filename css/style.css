@@ -16,6 +16,15 @@
   background: rgb(24, 214, 214);
 }
 
+#up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  color: aqua;
+  background-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,17 +57,17 @@ body {
 
 img.portre {
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   border: 2px solid #fff;
   margin-top: 1rem;
   transition: transform 1s, scale 1s;
 }
 
-img.portre:hover {
+/* img.portre:hover {
   scale: 1.2;
   transform: rotate(360deg);
-}
+} */
 
 /* .navbar-right .links a {
   margin-left: 2rem;
@@ -204,7 +213,7 @@ section#code {
     background-attachment: fixed;
   }
   #main-page {
-    padding: 0 80px;
+    padding: 40px 80px;
   }
 }
 
@@ -246,7 +255,7 @@ section#code {
 }
 
 #contact .icon .fa-envelope:hover {
-  color: #dc4e41;
+  color: #e97368;
   scale: 1.2;
 }
 
@@ -260,7 +269,7 @@ section#code {
 }
 
 #contact .icon .fa-location-dot:hover {
-  color: red;
+  color: rgb(255, 0, 0);
   scale: 1.2;
 }
 
