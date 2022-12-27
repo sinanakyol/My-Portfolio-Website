@@ -1,6 +1,4 @@
-.sidenav {
-  right: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
 
 #menu-container {
   margin: 0;
@@ -12,16 +10,27 @@
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#menu-container a {
+#menu a {
   text-decoration: none;
-  color: #fff;
-  font-family: "Font Awesome 6 Free";
-  font-weight: bold;
-  transition: text-shadow 0.3s;
+  color: #000;
+  transition: color 0.3s;
+}
+#menu a:hover {
+  color: tomato;
 }
 
-#menu-container a:hover {
-  text-shadow: 3px 3px aqua;
+#menu .category li {
+  font-family: "Rubik Marker Hatch", cursive;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+#menu .category-contact {
+  color: rgb(121, 121, 121);
+  font-size: 1.1rem;
+}
+#menu .category-contact li {
+  padding: 5px 0;
 }
 
 #menuToggle {
@@ -61,6 +70,7 @@
   position: relative;
 
   background: #fff;
+  color: #000;
   border-radius: 3px;
 
   z-index: 1;
@@ -86,7 +96,7 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #fff;
+  background: rgb(43, 42, 42);
 }
 
 /*
@@ -111,9 +121,10 @@
 #menu {
   position: absolute;
   width: 300px;
-  margin: -50px 0 0 -200px;
+  margin: -70px 0 0 -200px;
   padding: 50px;
   padding-top: 75px;
+  background-color: #fff;
 
   border: 1px solid transparent;
   border-radius: 20px;
@@ -125,11 +136,6 @@
   transform: translate(100%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
 }
 
 /*
