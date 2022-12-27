@@ -122,7 +122,7 @@ img.portre:hover {
   background-size: contain;
   background-position: center;
   color: rgb(255, 255, 255, 0.9);
-  padding: 80px;
+  padding: 40px;
 }
 
 #content {
@@ -202,6 +202,9 @@ section#code {
   #header,
   section#code {
     background-attachment: fixed;
+  }
+  #main-page {
+    padding: 0 80px;
   }
 }
 
