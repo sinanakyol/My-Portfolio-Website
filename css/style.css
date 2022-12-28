@@ -265,15 +265,18 @@ section#code {
 }
 
 #contact .icon .fa-envelope:hover {
-  color: #d8963a;
+  color: #8a3324;
+  background-color: black;
 }
 
 #contact .icon .fa-linkedin-in:hover {
   color: #0a66c2;
+  background-color: black;
 }
 
-#contact .icon .fa-location-dot:hover {
-  color: rgb(255, 0, 0);
+#contact .icon .fa-github:hover {
+  color: #fff;
+  background-color: black;
 }
 
 footer {
@@ -286,23 +289,4 @@ footer .nav-item .nav-link {
 
 footer .nav-item .nav-link:hover {
   text-decoration: none;
-}
-
-.fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
-}
-.fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
-}
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
-}
-.fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
-}
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-.fs-6 {
-  font-size: 1rem !important;
 }
