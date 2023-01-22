@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -205,8 +205,11 @@ section#code {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media screen and (max-width: 768px) {
   #scroll-btn {
-    display: none;
+    display: none !important;
   }
 }
 
