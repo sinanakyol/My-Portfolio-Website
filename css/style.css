@@ -27,7 +27,6 @@
   color: aqua;
   background-color: transparent;
   z-index: 10;
-  transition: display 0.5s;
 }
 
 html {
