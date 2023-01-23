@@ -59,22 +59,33 @@ body {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.navbar-left div {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  margin: 30px;
+}
+
 img.portre {
   border-radius: 50%;
   height: 6rem;
   width: 6rem;
   border: 2px solid #fff;
-  margin-top: 1rem;
-  transition: transform 1s, scale 1s;
+  object-fit: cover;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+img.portre:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  cursor: crosshair;
 }
 
 .myname {
   font-family: "Dancing Script", cursive;
 }
-/* img.portre:hover {
-  scale: 1.2;
-  transform: rotate(360deg);
-} */
 
 /* .navbar-right .links a {
   margin-left: 2rem;
