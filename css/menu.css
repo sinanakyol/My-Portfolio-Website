@@ -10,27 +10,32 @@
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#menu a {
+#menu .category a {
   text-decoration: none;
   color: #000;
   transition: color 0.3s;
 }
-#menu a:hover {
+#menu .category a:hover {
   color: tomato;
 }
 
-#menu .category li {
+#menu .category {
   font-family: "Rubik Marker Hatch", cursive;
   font-size: 1.5rem;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 #menu .category-contact {
+  padding: 3px 0;
+}
+
+#menu .category-contact a {
   color: rgb(121, 121, 121);
   font-size: 1.1rem;
 }
-#menu .category-contact li {
-  padding: 5px 0;
+
+#menu .category-contact a:hover {
+  text-decoration: none;
 }
 
 #menuToggle {
@@ -39,7 +44,7 @@
 
   right: 50px;
 
-  z-index: 1;
+  z-index: 10;
 
   -webkit-user-select: none;
   user-select: none;
@@ -120,9 +125,9 @@
  */
 #menu {
   position: absolute;
-  width: 300px;
+  width: 280px;
   margin: -70px 0 0 -200px;
-  padding: 50px;
+  padding: 60px;
   padding-top: 75px;
   background-color: #fff;
 
@@ -138,9 +143,21 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-/*
- * And let's slide it in from the left
- */
+@media (max-width: 768px) {
+  #menu {
+    padding: 60px 0 20px 20px;
+    margin: -70px 0 0 -100px;
+    width: 180px;
+  }
+  #menu .category a {
+    font-size: 18px;
+  }
+  #menu .category-contact a {
+    font-size: 14px;
+  }
+}
+
+/* * And let's slide it in from the left */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
