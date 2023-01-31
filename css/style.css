@@ -31,6 +31,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -73,7 +74,7 @@ img.portre {
   width: 6rem;
   border: 2px solid #fff;
   object-fit: cover;
-  transition: transform 0.5s, filter 1.5s ease-in-out;
+  transition: transform 0.5s, filter 1.5s ease-in-out, border 0.5s;
   filter: grayscale(100%);
 }
 
@@ -81,6 +82,7 @@ img.portre:hover {
   filter: grayscale(0);
   transform: scale(1.2);
   cursor: crosshair;
+  border: none;
 }
 
 .myname {
@@ -221,6 +223,15 @@ section#code {
   #scroll-btn {
     display: none !important;
   }
+
+  .navbar-left div {
+    margin: 20px !important;
+  }
+
+  #content {
+    left: 20px !important ;
+    bottom: 20px !important;
+  }
 }
 
 /* mobil görüntüyü bozmamak için attachment:fixed bu şekilde yazdık. */
@@ -261,9 +272,9 @@ section#code {
   }
 }
 
-.hide-bar {
-  display: none;
-}
+/* .hide-bar {
+  /* display: none;
+} */
 
 #contact .icon i {
   color: black;

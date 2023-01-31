@@ -9,7 +9,9 @@ window.onscroll = function () {
   ) {
     document.getElementById("scroll-btn").style.opacity = "1";
     document.getElementById("scroll-btn").style.transition = "opacity 1s";
+    document.getElementById("scroll-btn").style.cursor = "pointer";
   } else {
     document.getElementById("scroll-btn").style.opacity = "0";
+    document.getElementById("scroll-btn").style.cursor = "auto";
   }
 };

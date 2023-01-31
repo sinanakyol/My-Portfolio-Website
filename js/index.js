@@ -5,9 +5,9 @@
 //   links.classList.toggle("show-bar");
 // });
 
-const menuToggle = document.querySelector("#menuToggle");
-const menu = document.querySelector("#menu");
+// const menuToggle = document.querySelector("#menuToggle");
+// const menu = document.querySelector("#menu");
 
-menuToggle.addEventListener("click", () => {
-  menu.classList.toggle("hide-bar");
-});
+// menuToggle.addEventListener("click", () => {
+//   menu.classList.toggle("hide-bar");
+// });

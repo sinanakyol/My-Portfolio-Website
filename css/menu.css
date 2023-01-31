@@ -125,35 +125,37 @@
  */
 #menu {
   position: absolute;
-  width: 280px;
-  margin: -70px 0 0 -200px;
-  padding: 60px;
-  padding-top: 75px;
+  width: 320px;
+  margin: -55px 0 0 -220px;
+  padding: 60px 40px 40px;
   background-color: #fff;
 
-  border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 15px;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+  box-shadow: inset 0 0 70px black;
 }
 
 @media (max-width: 768px) {
   #menu {
-    padding: 60px 0 20px 20px;
-    margin: -70px 0 0 -100px;
-    width: 180px;
+    padding: 60px 0 20px 30px;
+    margin: -55px 0 0 -130px;
+    width: 250px;
   }
   #menu .category a {
     font-size: 18px;
   }
   #menu .category-contact a {
     font-size: 14px;
+  }
+  #menuToggle {
+    right: 20px;
   }
 }
 
