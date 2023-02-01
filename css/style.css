@@ -285,10 +285,15 @@ section#code {
   border-radius: 50%;
   padding: 10px;
   background-color: white;
+  box-shadow: rgb(255, 255, 255) 0px 12px 70px 4px;
+}
+
+#contact .icon i:hover {
+  box-shadow: none;
 }
 
 #contact .icon .fa-envelope:hover {
-  color: #8a3324;
+  color: tomato;
   background-color: black;
 }
 
