@@ -165,19 +165,6 @@ img.portre:hover {
   left: 3rem;
 }
 
-#code-img {
-  object-fit: fill;
-  width: 100%;
-}
-
-section#code {
-  background-image: url("../img/code.jpg");
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #soft-skills span {
   border: 1px solid white;
   border-radius: 25px;
@@ -232,6 +219,9 @@ section#code {
     left: 20px !important ;
     bottom: 20px !important;
   }
+  #contact .icon i {
+    font-size: 1.5rem !important;
+  }
 }
 
 /* mobil görüntüyü bozmamak için attachment:fixed bu şekilde yazdık. */
@@ -261,14 +251,21 @@ section#code {
 
 @media screen and (min-width: 992px) {
   .gif {
-    height: 270px;
-    width: 420px;
+    height: 230px;
+    width: 360px;
   }
   .navbar-right .links a {
     padding: 5px 8px;
   }
   #portfolio h4 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gif {
+    height: 270px;
+    width: 420px;
   }
 }
 
@@ -294,17 +291,17 @@ section#code {
 
 #contact .icon .fa-envelope:hover {
   color: tomato;
-  background-color: black;
+  background-color: transparent;
 }
 
 #contact .icon .fa-linkedin-in:hover {
   color: #0a66c2;
-  background-color: black;
+  background-color: transparent;
 }
 
 #contact .icon .fa-github:hover {
   color: #fff;
-  background-color: black;
+  background-color: transparent;
 }
 
 footer {
