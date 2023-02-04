@@ -1,17 +1,3 @@
-/* Portre */
-
-/* @keyframes myAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-  }
-}
-
-.portre {
-  animation: myAnimation 1s linear 0s infinite alternate none;
-} */
-
 /* Daktilo */
 
 @keyframes typing {
@@ -56,6 +42,10 @@
 
 /* scroll-btn */
 
+#scroll-btn:hover {
+  animation: bounce 500ms alternate cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -63,10 +53,6 @@
   to {
     transform: translateY(-20px);
   }
-}
-
-#scroll-btn:hover {
-  animation: bounce 500ms alternate cubic-bezier(0.2, 0.65, 0.6, 1);
 }
 
 /* Github */
