@@ -204,6 +204,10 @@ img.portre:hover {
     justify-content: center;
     align-items: center;
   }
+
+  #soft-skills span {
+    padding: 5px 7px;
+  }
 }
 
 @media screen and (max-width: 768px) {
