@@ -163,3 +163,26 @@
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
+#menu #download-cv {
+  font-family: math;
+  background-color: tomato;
+  padding: 7px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px inset;
+}
+
+#menu #download-cv:hover {
+  background-color: #000;
+  transition: 1s;
+}
+
+@media (min-width: 768px) {
+  #menu #download-cv {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    border: 3px inset;
+  }
+}
