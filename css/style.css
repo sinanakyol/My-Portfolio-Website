@@ -183,7 +183,7 @@ img.portre:hover {
   font-family: "Rubik Marker Hatch", cursive;
 }
 
-#portfolio > div {
+#portfolio > div:not(:last-child) {
   margin-bottom: 3rem;
 }
 
@@ -206,7 +206,17 @@ img.portre:hover {
   }
 
   #soft-skills span {
-    padding: 5px 7px;
+    padding: 5px 10px;
+  }
+
+  #header {
+    height: 100vh;
+  }
+  #header::before {
+    height: 100%;
+  }
+  #main-page .section {
+    margin-bottom: 6rem;
   }
 }
 
@@ -281,7 +291,7 @@ img.portre:hover {
   color: black;
   font-size: 2.5rem;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 1s ease;
   border: 1px solid transparent;
   border-radius: 50%;
   padding: 10px;
@@ -313,9 +323,10 @@ footer {
 }
 
 footer .nav-item .nav-link {
-  text-decoration: overline;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
 }
 
 footer .nav-item .nav-link:hover {
-  text-decoration: none;
+  border-bottom: 1px solid aqua;
 }
